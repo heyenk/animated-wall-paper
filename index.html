@@ -1,0 +1,50 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ALE • Animated Wallpaper</title>
+        <style>
+        html, body, #awp {
+          overscroll-behavior: none;
+          background-color: #151515;
+        }
+        
+      #color-overlay { 
+        will-change: transform;
+        background: rgba(43,43,43, .64); 
+        
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none; 
+        -khtml-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none; 
+      }
+      
+        </style>
+        
+        <link rel="stylesheet" href="animated-wallpaper.css">
+        <script id="optionsData" type="application/json">
+          {"covers":{"all":["covers/B06XW3MVNF.jpg","covers/B002V8KPBI.jpg","covers/0593340167.jpg","covers/1250803551.jpg","covers/179713521X.jpg","covers/B0085NZ77A.jpg","covers/B08G9PRS1K.jpg","covers/B07RT6J4C7.jpg","covers/B004VA8ZVQ.jpg","covers/B002UZMZFQ.jpg","covers/B003O9I8BW.jpg","covers/B00H9JEIDA.jpg","covers/B002V1A1YQ.jpg","covers/B079C3HCZP.jpg","covers/B0044EMDEO.jpg","covers/179711705X.jpg","covers/B07FCQJJQK.jpg","covers/B002VA3MTI.jpg","covers/B015HQBALE.jpg","covers/B00NMVQYNQ.jpg","covers/1469073129.jpg","covers/B077BPKPZQ.jpg","covers/B00O9GSWRE.jpg","covers/B00O10OWTK.jpg","covers/B017S1THAM.jpg","covers/B072P5VYK8.jpg","covers/1988649102.jpg","covers/B01ENKM866.jpg","covers/B00PHPSYUQ.jpg","covers/B00NLMGHLA.jpg","covers/B003D8W5VS.jpg","covers/006289207X.jpg","covers/B00375PP4Q.jpg","covers/0593295633.jpg","covers/B00OSJZ7BQ.jpg","covers/B007289K6I.jpg","covers/B002UZDVL8.jpg","covers/B074F447V6.jpg","covers/B00ECGLKLG.jpg","covers/B002UZLEFS.jpg","covers/125026345X.jpg","covers/B002V1CI3I.jpg","covers/1549121669.jpg","covers/0525499334.jpg","covers/0062953834.jpg","covers/B01CRM17MS.jpg","covers/B074B29GQJ.jpg","covers/B002V1CEW8.jpg","covers/B002V0PN36.jpg","covers/B002V0RAUU.jpg","covers/B005V0QI82.jpg","covers/1094051691.jpg","covers/B07FXYH8HL.jpg","covers/1663710732.jpg","covers/1683643852.jpg","covers/1982647965.jpg","covers/B075FX38KX.jpg","covers/0593294181.jpg","covers/0593211510.jpg","covers/B002UZI1YK.jpg","covers/B07B75MTKH.jpg","covers/B07LCXD7ZM.jpg","covers/0062967584.jpg","covers/B01B241FRO.jpg","covers/B01M4GIW63.jpg","covers/B00SVPQRRQ.jpg","covers/B01N40AUFG.jpg","covers/B00I0AJC2Y.jpg","covers/153849115X.jpg","covers/B01ETNAEE0.jpg","covers/B01B6WSMHI.jpg","covers/B0731R4RFX.jpg","covers/1250622689.jpg","covers/B005TKKCWC.jpg","covers/1400215994.jpg","covers/B07DHS7PP5.jpg","covers/B01N4DCBK6.jpg","covers/1549150340.jpg","covers/B0741G911Q.jpg","covers/B01DFG9CWC.jpg","covers/0525642293.jpg","covers/B00518NLX4.jpg","covers/0525641726.jpg","covers/B07MDDHRS8.jpg","covers/B00ECDZ08I.jpg","covers/B002V8L3P0.jpg","covers/B07CJXVD5W.jpg","covers/B01IE0TTBI.jpg","covers/B07BMHFBCM.jpg","covers/B07GJ5W4BG.jpg","covers/B07KKMNZCH.jpg","covers/B019R2DSDM.jpg","covers/B07D18VG2F.jpg","covers/B00G4HLM6E.jpg","covers/B07626B9D2.jpg","covers/B00UX8ODPM.jpg","covers/B07FK3XFLQ.jpg","covers/B07BN2GNQQ.jpg","covers/B002V1LGZE.jpg","covers/B07H51JQK2.jpg","covers/B005CCLF32.jpg","covers/B07BHVWFSM.jpg","covers/B077Z8S58Y.jpg","covers/B071Y9TTHC.jpg","covers/B01CF5O89G.jpg","covers/B015TVHUA2.jpg","covers/B07D7FVW9L.jpg","covers/B0718Z5K4C.jpg","covers/B0771M2LBH.jpg","covers/B00M27LBU2.jpg","covers/B0751MT3F1.jpg","covers/B01A9E8GJI.jpg","covers/B00J8MOCA0.jpg","covers/B01AGM2XME.jpg","covers/B00S8FDCTK.jpg","covers/B071438NCM.jpg","covers/B06W5861HP.jpg","covers/B01N48VJFJ.jpg","covers/B07341FZDC.jpg","covers/B01N17THEO.jpg","covers/B002VACOB0.jpg","covers/B002V1M3EM.jpg","covers/B017OBNWZ2.jpg","covers/B01L082HJ2.jpg","covers/B017MQ2L5G.jpg","covers/B00BTIEXBO.jpg","covers/B01FR5OEZ4.jpg","covers/B01DAU1F00.jpg","covers/B01HMUW83W.jpg","covers/B002V02S20.jpg","covers/B019NNU7XE.jpg","covers/B01705KJRQ.jpg","covers/B00IZGD864.jpg","covers/B00R8JJE12.jpg","covers/B012BS8QTA.jpg","covers/B00XIARLG0.jpg","covers/B0143O99FK.jpg","covers/B00W47P4D0.jpg","covers/B00XIO0NV6.jpg","covers/B00J54M7EY.jpg","covers/B00B5HZGUG.jpg","covers/B00VQTDX58.jpg","covers/B00K0SEASU.jpg","covers/B005LXV0HI.jpg","covers/B004Z48FYU.jpg","covers/B00GT1240I.jpg","covers/B002V0PMPK.jpg","covers/B00D3PBYAE.jpg","covers/B002UZYX2Y.jpg","covers/B00J27W2OO.jpg","covers/B007IKV2P2.jpg","covers/B00K5UE8T4.jpg","covers/B002V5GLQ4.jpg","covers/B002V0QCYU.jpg","covers/B00ICRLMWI.jpg","covers/B00HWF0MHW.jpg","covers/B0073JS57G.jpg","covers/B003ZWFO7E.jpg","covers/B004BAUKFK.jpg","covers/B002V1LNSE.jpg","covers/B002V1BMPI.jpg","covers/B00HST92G4.jpg","covers/B008K8CEAS.jpg","covers/B00II8X7GA.jpg","covers/B006G1NY9Q.jpg","covers/B005JSMSEE.jpg","covers/B009M6GF3Y.jpg","covers/B009OJXEOW.jpg","covers/B00494LMV4.jpg","covers/B002UZN0PA.jpg","covers/B00DC8GDVC.jpg","covers/B009Z3H0EW.jpg","covers/B002V0K6BA.jpg","covers/B009YMIC00.jpg","covers/B00DP43UWS.jpg","covers/B004NQKRVE.jpg","covers/B002V0QRKY.jpg","covers/B002V0GIJE.jpg","covers/B009EPJNUK.jpg","covers/B002V5BV96.jpg","covers/B002V1AJEI.jpg","covers/B002UUFOSG.jpg","covers/B002V5D950.jpg","covers/B002V0118W.jpg","covers/B002V5HAL4.jpg","covers/B0035N02ZM.jpg","covers/B003L25KNG.jpg","covers/B002V5BDOE.jpg","covers/B002V0JU3U.jpg","covers/B002ZF36FY.jpg","covers/B002UZML5K.jpg","covers/B002V1OIM2.jpg","covers/B002UP1LXS.jpg","covers/B0036NHZ10.jpg","covers/B00AEB3052.jpg","covers/B0077DEH7A.jpg","covers/B005UR3VFO.jpg","covers/B003D8U812.jpg","covers/B002V5CUHI.jpg","covers/B002UZKKSU.jpg","covers/B007MQG2NO.jpg","covers/B003TL85SQ.jpg"],"size":182.85714285714286,"perRow":14,"padding":0,"dropOverflowingRow":false},"canvas":{"width":2560,"height":1080,"overlayColor":"rgba(43,43,43, .64)","overlayBlendmode":[{"label":"Normal","value":"normal"},{"label":"Multiply","value":"multiply"},{"label":"Screen","value":"screen"},{"label":"Overlay","value":"overlay"},{"label":"Darken","value":"darken"},{"label":"Lighten","value":"lighten"},{"label":"Color dodge","value":"color-dodge"},{"label":"Color burn","value":"color-burn"},{"label":"Hard light","value":"hard-light"},{"label":"Soft light","value":"soft-light"},{"label":"Difference","value":"difference"},{"label":"Exclusion","value":"exclusion"},{"label":"Hue","value":"hue"},{"label":"Saturation","value":"saturation"},{"label":"Color","value":"color"},{"label":"Luminosity","value":"luminosity"}],"grayscale":false,"grayscaleContrast":0.8,"background":"#151515","padding":{"left":0,"top":0,"right":0,"bottom":0},"alignmentVertical":"center"},"prioritizeCoversPerRow":true,"animation":{"name":"all-animations-random","description":"...","onLoad":true,"use":["bounce-in-fwd","fade-in","fade-in-top","fade-in-br","fade-in-right","fade-in-tr","fade-in-bottom","fade-in-tl","fade-in-left","fade-in-bl","push-left","push-right","push-up","push-down","squish-left","squish-right","squish-up","squish-down","flip-horizontal-bottom","flip-horizontal-top","flip-vertical-right","flip-vertical-left","flip-diagonal-2-tl","flip-diagonal-2-br","flip-diagonal-1-bl","flip-diagonal-1-tr","flip-2-hor-top-2","flip-2-ver-right-2","flip-2-hor-bottom-2","flip-2-ver-left-2","flip-scale-down-hor","flip-scale-down-ver","flip-scale-down-diag-1","flip-scale-down-diag-2"],"cycleDelay":10,"covers":3,"randomCovers":true,"animationZone":50,"randomDelay":true,"sequential":true}}
+        </script>
+      </head>
+      <body>
+        
+        <div id="color-overlay"></div>
+        <div id="animated-wallpaper"></div>
+        <script src="animated-wallpaper.js"></script>
+        
+      </body>
+      </html>      
+      
